@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>resouce/icon/游戏机.svg</file>
+    <file>resouce/icon/右转 (1).svg</file>
+    <file>resouce/icon/右转.svg</file>
+    <file>resouce/icon/左转 (1).svg</file>
+    <file>resouce/icon/左转.svg</file>
+    <file>resouce/icon/24gl-stopCircle (1).svg</file>
+    <file>resouce/icon/24gl-stopCircle.svg</file>
+    <file>resouce/icon/上 (1).svg</file>
+    <file>resouce/icon/上.svg</file>
+    <file>resouce/icon/下 (1).svg</file>
+    <file>resouce/icon/下.svg</file>
+    <file>resouce/icon/右 (1).svg</file>
+    <file>resouce/icon/右.svg</file>
+    <file>resouce/icon/左 (1).svg</file>
+    <file>resouce/icon/左.svg</file>
+    <file>resouce/icon/关闭 (1).svg</file>
+    <file>resouce/icon/关闭.svg</file>
+    <file>resouce/icon/picture.svg</file>
+    <file>resouce/icon/Camera2 (1).svg</file>
+    <file>resouce/icon/Camera2.svg</file>
+    <file>resouce/icon/page.svg</file>
+  </qresource>
+  <qresource prefix="image">
+    <file>resouce/image/R-C.png</file>
+    <file>resouce/image/background3.png</file>
+  </qresource>
+</RCC>
