@@ -15,14 +15,14 @@ class Ui_UI(object):
     def setupUi(self, UI):
         UI.setObjectName("UI")
         UI.setEnabled(True)
-        UI.resize(1000, 650)
+        UI.resize(1100, 800)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(UI.sizePolicy().hasHeightForWidth())
         UI.setSizePolicy(sizePolicy)
-        UI.setMinimumSize(QtCore.QSize(1000, 650))
-        UI.setMaximumSize(QtCore.QSize(1000, 650))
+        UI.setMinimumSize(QtCore.QSize(1100, 800))
+        UI.setMaximumSize(QtCore.QSize(1100, 800))
         UI.setStyleSheet("QWidget#UI {\n"
 "background-color: rgb(255, 255, 255);\n"
 "border-top-left-radius:10px;\n"
@@ -142,16 +142,16 @@ class Ui_UI(object):
 "    \n"
 "    background-color: rgb(85, 85, 255);\n"
 "    \n"
-"    font: 9pt \"Lucida Handwriting\";\n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    font: 12pt \"Lucida Handwriting\";\n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "    \n"
 "}\n"
 "QListView::item{\n"
 "    background-color: transparent;\n"
-"    padding:5px;\n"
+"    padding:9px;\n"
 "}\n"
 "QListView::item:hover {\n"
 "    background-color: rgb(230, 230, 230);\n"
@@ -258,15 +258,15 @@ class Ui_UI(object):
         self.scrollArea.setAlignment(QtCore.Qt.AlignCenter)
         self.scrollArea.setObjectName("scrollArea")
         self.scroll_Page1 = QtWidgets.QWidget()
-        self.scroll_Page1.setGeometry(QtCore.QRect(0, 0, 866, 890))
+        self.scroll_Page1.setGeometry(QtCore.QRect(0, 0, 955, 890))
         self.scroll_Page1.setStyleSheet("QWidget#scroll_Page1 {\n"
 "    \n"
 "    background-color: rgb(85, 85, 127);\n"
 "    border: 10px solid;\n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "}")
         self.scroll_Page1.setObjectName("scroll_Page1")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.scroll_Page1)
@@ -297,12 +297,12 @@ class Ui_UI(object):
         self.frame_3.setStyleSheet("QFrame#frame_3{\n"
 "    border: 10px solid;\n"
 "    \n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "    \n"
 "    \n"
-"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
 "}")
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
@@ -341,12 +341,12 @@ class Ui_UI(object):
         self.frame_4.setStyleSheet("QFrame#frame_4{\n"
 "    border: 10px solid;\n"
 "    \n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "    \n"
 "    \n"
-"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "}")
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
@@ -434,18 +434,135 @@ class Ui_UI(object):
         self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
-        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.frame_2)
-        self.horizontalLayout_8.setContentsMargins(10, 10, 10, 10)
+        self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.frame_2)
+        self.verticalLayout_7.setContentsMargins(10, 10, 10, 10)
+        self.verticalLayout_7.setObjectName("verticalLayout_7")
+        self.frame_7 = QtWidgets.QFrame(self.frame_2)
+        self.frame_7.setStyleSheet("QFrame#frame_7{\n"
+"    border: 10px solid;\n"
+"    \n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    \n"
+"    \n"
+"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"}")
+        self.frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.verticalLayout_8 = QtWidgets.QVBoxLayout(self.frame_7)
+        self.verticalLayout_8.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_8.setSpacing(0)
+        self.verticalLayout_8.setObjectName("verticalLayout_8")
+        self.label_4 = QtWidgets.QLabel(self.frame_7)
+        self.label_4.setStyleSheet("QLabel {\n"
+"    /* 背景颜色 */\n"
+"    background-color: #f0f0f0; /* 浅灰色背景 */\n"
+"    \n"
+"    /* 边框 */\n"
+"    border: 2px solid #cccccc; /* 灰色边框，宽度2px */\n"
+"    border-radius: 8px;        /* 圆角边框，半径8px */\n"
+"    \n"
+"    /* 字体 */\n"
+"    font-size: 16px;           /* 字体大小 */\n"
+"    font-family: \"Arial\";      /* 字体类型 */\n"
+"    color: #333333;            /* 文字颜色 */\n"
+"    \n"
+"    /* 内边距 */\n"
+"    padding: 5px;              /* 控件内的填充距离 */\n"
+"    \n"
+"    /* 文本对齐 */\n"
+"    text-align: center;        /* 文本居中对齐 */\n"
+"    \n"
+"    /* 阴影效果 */\n"
+"    /* 注意：Qt 5.11 之后增加了对 CSS3 box-shadow 属性的支持 */\n"
+"    /* 对于较老的Qt版本，可能需要使用自定义绘制 */\n"
+"    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 水平偏移、垂直偏移、模糊半径、颜色 */\n"
+"    \n"
+"    /* 最小尺寸 */\n"
+"    min-width: 200px;          /* 最小宽度 */\n"
+"    min-height: 100px;         /* 最小高度 */\n"
+"    \n"
+"    /* 其他样式 */\n"
+"    selection-background-color: #66afe9; /* 选中文本的背景颜色 */\n"
+"    selection-color: black;             /* 选中文本的颜色 */\n"
+"}")
+        self.label_4.setText("")
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.verticalLayout_8.addWidget(self.label_4)
+        self.verticalLayout_7.addWidget(self.frame_7)
+        self.frame_8 = QtWidgets.QFrame(self.frame_2)
+        self.frame_8.setStyleSheet("QFrame#frame_8{\n"
+"border: 10px solid;\n"
+"    \n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    \n"
+"    \n"
+"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"}")
+        self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_8.setObjectName("frame_8")
+        self.horizontalLayout_8 = QtWidgets.QHBoxLayout(self.frame_8)
         self.horizontalLayout_8.setObjectName("horizontalLayout_8")
-        self.Label_track = QtWidgets.QLabel(self.frame_2)
-        self.Label_track.setStyleSheet("    border: 10px solid;\n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));")
-        self.Label_track.setText("")
-        self.Label_track.setObjectName("Label_track")
-        self.horizontalLayout_8.addWidget(self.Label_track)
+        self.toolButton_hide1 = QtWidgets.QToolButton(self.frame_8)
+        self.toolButton_hide1.setStyleSheet("QToolButton{\n"
+"    background-color: rgba(0, 0, 0, 10);\n"
+"border:0px solid rgb(25, 87, 16);\n"
+"    border-radius:23px;\n"
+"\n"
+"}\n"
+"QToolButton:hover {\n"
+"background-color: rgba(0, 0, 0, 15);\n"
+"\n"
+"}\n"
+"QToolButton:pressed {\n"
+"background-color: rgba(0, 0, 0, 20);\n"
+"\n"
+"}")
+        self.toolButton_hide1.setObjectName("toolButton_hide1")
+        self.horizontalLayout_8.addWidget(self.toolButton_hide1)
+        self.toolButton_hide2 = QtWidgets.QToolButton(self.frame_8)
+        self.toolButton_hide2.setStyleSheet("QToolButton{\n"
+"    background-color: rgba(0, 0, 0, 10);\n"
+"border:0px solid rgb(25, 87, 16);\n"
+"    border-radius:23px;\n"
+"\n"
+"}\n"
+"QToolButton:hover {\n"
+"background-color: rgba(0, 0, 0, 15);\n"
+"\n"
+"}\n"
+"QToolButton:pressed {\n"
+"background-color: rgba(0, 0, 0, 20);\n"
+"\n"
+"}")
+        self.toolButton_hide2.setObjectName("toolButton_hide2")
+        self.horizontalLayout_8.addWidget(self.toolButton_hide2)
+        self.toolButton_hide3 = QtWidgets.QToolButton(self.frame_8)
+        self.toolButton_hide3.setStyleSheet("QToolButton{\n"
+"    background-color: rgba(0, 0, 0, 10);\n"
+"border:0px solid rgb(25, 87, 16);\n"
+"    border-radius:23px;\n"
+"\n"
+"}\n"
+"QToolButton:hover {\n"
+"background-color: rgba(0, 0, 0, 15);\n"
+"\n"
+"}\n"
+"QToolButton:pressed {\n"
+"background-color: rgba(0, 0, 0, 20);\n"
+"\n"
+"}")
+        self.toolButton_hide3.setObjectName("toolButton_hide3")
+        self.horizontalLayout_8.addWidget(self.toolButton_hide3)
+        self.verticalLayout_7.addWidget(self.frame_8)
+        self.verticalLayout_7.setStretch(0, 10)
+        self.verticalLayout_7.setStretch(1, 2)
         self.horizontalLayout_5.addWidget(self.frame_2)
         self.horizontalLayout_5.setStretch(0, 5)
         self.horizontalLayout_5.setStretch(1, 3)
@@ -456,16 +573,16 @@ class Ui_UI(object):
 "background-color: transparent;\n"
 "border-radius: 10px;\n"
 "border: 10px solid;\n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-right-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "}")
         self.frame2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame2.setObjectName("frame2")
         self.horizontalLayout_9 = QtWidgets.QHBoxLayout(self.frame2)
-        self.horizontalLayout_9.setContentsMargins(18, 15, 18, -1)
+        self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_9.setObjectName("horizontalLayout_9")
         self.tableWidget = QtWidgets.QTableWidget(self.frame2)
         self.tableWidget.setMouseTracking(True)
@@ -484,11 +601,11 @@ class Ui_UI(object):
 "\n"
 "    border: 20px solid;\n"
 "    \n"
-"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-top-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "    color: rgb(142, 255, 251);\n"
-"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
-"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(41, 207, 207, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0.017, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-left-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
+"    border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0.091, x2:0, y2:1, stop:0 rgba(85, 85, 255， 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
 "\n"
 "}\n"
@@ -551,6 +668,16 @@ class Ui_UI(object):
         self.tableWidget.setHorizontalHeaderItem(3, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 1, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 2, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 3, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableWidget.setItem(0, 4, item)
         self.tableWidget.horizontalHeader().setDefaultSectionSize(133)
         self.tableWidget.horizontalHeader().setMinimumSectionSize(30)
         self.tableWidget.verticalHeader().setDefaultSectionSize(35)
@@ -950,6 +1077,22 @@ class Ui_UI(object):
         self.toolButton_e.setIconSize(QtCore.QSize(40, 40))
         self.toolButton_e.setObjectName("toolButton_e")
         self.gridLayout_2.addWidget(self.toolButton_e, 0, 2, 1, 1)
+        self.toolButton_yao1 = QtWidgets.QToolButton(self.page_3)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.toolButton_yao1.sizePolicy().hasHeightForWidth())
+        self.toolButton_yao1.setSizePolicy(sizePolicy)
+        self.toolButton_yao1.setObjectName("toolButton_yao1")
+        self.gridLayout_2.addWidget(self.toolButton_yao1, 2, 0, 1, 1)
+        self.toolButton_yao2 = QtWidgets.QToolButton(self.page_3)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.toolButton_yao2.sizePolicy().hasHeightForWidth())
+        self.toolButton_yao2.setSizePolicy(sizePolicy)
+        self.toolButton_yao2.setObjectName("toolButton_yao2")
+        self.gridLayout_2.addWidget(self.toolButton_yao2, 2, 2, 1, 1)
         self.gridLayout_4.addLayout(self.gridLayout_2, 0, 1, 1, 1)
         spacerItem10 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_4.addItem(spacerItem10, 0, 4, 1, 1)
@@ -1036,6 +1179,9 @@ class Ui_UI(object):
         item.setText(_translate("UI", "Page4"))
         self.listWidget.setSortingEnabled(__sortingEnabled)
         self.Button_camera.setText(_translate("UI", "..."))
+        self.toolButton_hide1.setText(_translate("UI", "..."))
+        self.toolButton_hide2.setText(_translate("UI", "..."))
+        self.toolButton_hide3.setText(_translate("UI", "..."))
         item = self.tableWidget.verticalHeaderItem(0)
         item.setText(_translate("UI", "种植作物占比"))
         item = self.tableWidget.verticalHeaderItem(2)
@@ -1054,6 +1200,9 @@ class Ui_UI(object):
         item.setText(_translate("UI", "4h"))
         item = self.tableWidget.horizontalHeaderItem(4)
         item.setText(_translate("UI", "5h"))
+        __sortingEnabled = self.tableWidget.isSortingEnabled()
+        self.tableWidget.setSortingEnabled(False)
+        self.tableWidget.setSortingEnabled(__sortingEnabled)
         self.label_3.setText(_translate("UI", "采集检测图片"))
         self.toolButton_i.setText(_translate("UI", "i"))
         self.toolButton_j.setText(_translate("UI", "j"))
@@ -1068,4 +1217,6 @@ class Ui_UI(object):
         self.toolButton_w.setText(_translate("UI", "w"))
         self.toolButton_q.setText(_translate("UI", "Q"))
         self.toolButton_e.setText(_translate("UI", "E"))
+        self.toolButton_yao1.setText(_translate("UI", "1"))
+        self.toolButton_yao2.setText(_translate("UI", "2"))
 import resource

@@ -3,8 +3,8 @@ import shutil
 import random
 
 # 设置路径
-image_dir = 'W:\python\Project10.14\dataset'  # 替换为你的image文件夹路径
-label_dir = 'W:\python\Project10.14\label_yolo'  # 替换为你的label文件夹路径
+image_dir = r'C:\Users\Wangxuan\Downloads\last_leaf'  # 替换为你的image文件夹路径
+label_dir = r'C:\Users\Wangxuan\Downloads\last_leaf_txt'  # 替换为你的label文件夹路径
 train_image_dir = 'train_image'
 val_image_dir = 'val_image'
 train_txt_dir = 'train_txt'
