@@ -1,0 +1,106 @@
+类别: yeku, 置信度: 0.31
+边界框坐标: [tensor(0.), tensor(564.), tensor(83.), tensor(720.)]
+类别: yeku, 置信度: 0.41
+边界框坐标: [tensor(0.), tensor(558.), tensor(80.), tensor(720.)]
+类别: shuangmei, 置信度: 0.61
+边界框坐标: [tensor(914.), tensor(309.), tensor(1011.), tensor(373.)]
+类别: yeku, 置信度: 0.27
+边界框坐标: [tensor(0.), tensor(552.), tensor(80.), tensor(720.)]
+类别: yeku, 置信度: 0.25
+边界框坐标: [tensor(960.), tensor(13.), tensor(1013.), tensor(185.)]
+类别: yeku, 置信度: 0.26
+边界框坐标: [tensor(5.), tensor(561.), tensor(85.), tensor(715.)]
+类别: yeku, 置信度: 0.27
+边界框坐标: [tensor(965.), tensor(0.), tensor(1012.), tensor(87.)]
+类别: yeku, 置信度: 0.36
+边界框坐标: [tensor(1229.), tensor(71.), tensor(1274.), tensor(182.)]
+类别: shuangmei, 置信度: 0.41
+边界框坐标: [tensor(671.), tensor(248.), tensor(853.), tensor(350.)]
+类别: shuangmei, 置信度: 0.60
+边界框坐标: [tensor(714.), tensor(256.), tensor(802.), tensor(351.)]
+类别: yeku1, 置信度: 0.53
+边界框坐标: [tensor(0.), tensor(582.), tensor(65.), tensor(717.)]
+类别: yeku1, 置信度: 0.56
+边界框坐标: [tensor(756.), tensor(301.), tensor(879.), tensor(546.)]
+类别: yeku1, 置信度: 0.58
+边界框坐标: [tensor(677.), tensor(68.), tensor(863.), tensor(283.)]
+类别: yeku1, 置信度: 0.59
+边界框坐标: [tensor(835.), tensor(172.), tensor(918.), tensor(463.)]
+类别: yeku1, 置信度: 0.71
+边界框坐标: [tensor(1004.), tensor(229.), tensor(1082.), tensor(470.)]
+类别: yeku1, 置信度: 0.72
+边界框坐标: [tensor(920.), tensor(328.), tensor(1009.), tensor(527.)]
+类别: yeku1, 置信度: 0.88
+边界框坐标: [tensor(702.), tensor(188.), tensor(829.), tensor(463.)]
+类别: yeku1, 置信度: 0.45
+边界框坐标: [tensor(3.), tensor(567.), tensor(58.), tensor(715.)]
+类别: yeku2, 置信度: 0.60
+边界框坐标: [tensor(1118.), tensor(237.), tensor(1277.), tensor(316.)]
+类别: yeku2, 置信度: 0.66
+边界框坐标: [tensor(232.), tensor(26.), tensor(288.), tensor(84.)]
+类别: yeku2, 置信度: 0.66
+边界框坐标: [tensor(405.), tensor(297.), tensor(520.), tensor(395.)]
+类别: yeku1, 置信度: 0.89
+边界框坐标: [tensor(531.), tensor(0.), tensor(653.), tensor(417.)]
+类别: yeku1, 置信度: 0.26
+边界框坐标: [tensor(0.), tensor(580.), tensor(65.), tensor(720.)]
+类别: shuangmei1, 置信度: 0.46
+边界框坐标: [tensor(635.), tensor(461.), tensor(764.), tensor(560.)]
+类别: shuangmei2, 置信度: 0.82
+边界框坐标: [tensor(932.), tensor(391.), tensor(1032.), tensor(547.)]
+类别: yeku1, 置信度: 0.37
+边界框坐标: [tensor(867.), tensor(104.), tensor(995.), tensor(502.)]
+类别: yeku1, 置信度: 0.48
+边界框坐标: [tensor(0.), tensor(581.), tensor(67.), tensor(717.)]
+类别: yeku1, 置信度: 0.75
+边界框坐标: [tensor(666.), tensor(374.), tensor(811.), tensor(675.)]
+类别: yeku1, 置信度: 0.86
+边界框坐标: [tensor(787.), tensor(207.), tensor(917.), tensor(564.)]
+类别: yeku1, 置信度: 0.88
+边界框坐标: [tensor(583.), tensor(278.), tensor(739.), tensor(587.)]
+类别: yeku1, 置信度: 0.91
+边界框坐标: [tensor(592.), tensor(96.), tensor(809.), tensor(405.)]
+类别: chongzhu, 置信度: 0.29
+边界框坐标: [tensor(579.), tensor(275.), tensor(652.), tensor(337.)]
+类别: chongzhu, 置信度: 0.33
+边界框坐标: [tensor(330.), tensor(459.), tensor(489.), tensor(568.)]
+类别: yeku1, 置信度: 0.76
+边界框坐标: [tensor(7.), tensor(183.), tensor(100.), tensor(366.)]
+类别: chongzhu, 置信度: 0.26
+边界框坐标: [tensor(312.), tensor(464.), tensor(427.), tensor(565.)]
+类别: yeku1, 置信度: 0.29
+边界框坐标: [tensor(0.), tensor(571.), tensor(64.), tensor(720.)]
+类别: chongzhu, 置信度: 0.32
+边界框坐标: [tensor(666.), tensor(282.), tensor(757.), tensor(368.)]
+类别: chongzhu, 置信度: 0.40
+边界框坐标: [tensor(372.), tensor(369.), tensor(516.), tensor(562.)]
+类别: chongzhu, 置信度: 0.43
+边界框坐标: [tensor(342.), tensor(441.), tensor(497.), tensor(564.)]
+类别: yeku1, 置信度: 0.77
+边界框坐标: [tensor(5.), tensor(183.), tensor(100.), tensor(368.)]
+类别: yeku1, 置信度: 0.36
+边界框坐标: [tensor(0.), tensor(563.), tensor(62.), tensor(717.)]
+类别: chongzhu, 置信度: 0.37
+边界框坐标: [tensor(161.), tensor(406.), tensor(227.), tensor(492.)]
+类别: chongzhu, 置信度: 0.44
+边界框坐标: [tensor(314.), tensor(484.), tensor(431.), tensor(570.)]
+类别: chongzhu, 置信度: 0.53
+边界框坐标: [tensor(661.), tensor(267.), tensor(765.), tensor(369.)]
+类别: yeku1, 置信度: 0.26
+边界框坐标: [tensor(0.), tensor(582.), tensor(62.), tensor(718.)]
+类别: shuangmei2, 置信度: 0.63
+边界框坐标: [tensor(1022.), tensor(279.), tensor(1096.), tensor(413.)]
+类别: shuangmei1, 置信度: 0.79
+边界框坐标: [tensor(774.), tensor(415.), tensor(877.), tensor(537.)]
+类别: shuangmei2, 置信度: 0.75
+边界框坐标: [tensor(1022.), tensor(281.), tensor(1095.), tensor(406.)]
+类别: shuangmei1, 置信度: 0.80
+边界框坐标: [tensor(776.), tensor(416.), tensor(879.), tensor(535.)]
+类别: chongzhu, 置信度: 0.31
+边界框坐标: [tensor(647.), tensor(446.), tensor(704.), tensor(513.)]
+类别: yeku2, 置信度: 0.39
+边界框坐标: [tensor(3.), tensor(583.), tensor(58.), tensor(713.)]
+类别: chongzhu, 置信度: 0.54
+边界框坐标: [tensor(292.), tensor(569.), tensor(359.), tensor(648.)]
+类别: yeku1, 置信度: 0.57
+边界框坐标: [tensor(4.), tensor(560.), tensor(56.), tensor(720.)]

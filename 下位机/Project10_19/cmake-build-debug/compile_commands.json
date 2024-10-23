@@ -1,0 +1,162 @@
+[
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\App\\DHT11.c.obj -c W:\\ARM\\Project10_19\\Core\\App\\DHT11.c",
+  "file": "W:/ARM/Project10_19/Core/App/DHT11.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\App\\OLED.c.obj -c W:\\ARM\\Project10_19\\Core\\App\\OLED.c",
+  "file": "W:/ARM/Project10_19/Core/App/OLED.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\App\\oledfont.c.obj -c W:\\ARM\\Project10_19\\Core\\App\\oledfont.c",
+  "file": "W:/ARM/Project10_19/Core/App/oledfont.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\main.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\main.c",
+  "file": "W:/ARM/Project10_19/Core/Src/main.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\gpio.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\gpio.c",
+  "file": "W:/ARM/Project10_19/Core/Src/gpio.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\adc.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\adc.c",
+  "file": "W:/ARM/Project10_19/Core/Src/adc.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\i2c.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\i2c.c",
+  "file": "W:/ARM/Project10_19/Core/Src/i2c.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\tim.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\tim.c",
+  "file": "W:/ARM/Project10_19/Core/Src/tim.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\usart.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\usart.c",
+  "file": "W:/ARM/Project10_19/Core/Src/usart.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\stm32f1xx_it.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\stm32f1xx_it.c",
+  "file": "W:/ARM/Project10_19/Core/Src/stm32f1xx_it.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\stm32f1xx_hal_msp.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\stm32f1xx_hal_msp.c",
+  "file": "W:/ARM/Project10_19/Core/Src/stm32f1xx_hal_msp.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_adc.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_adc.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_adc_ex.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_adc_ex.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash_ex.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_flash_ex.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_exti.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_exti.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_i2c.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_i2c.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim_ex.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_tim_ex.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c.obj -c W:\\ARM\\Project10_19\\Drivers\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c",
+  "file": "W:/ARM/Project10_19/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\system_stm32f1xx.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\system_stm32f1xx.c",
+  "file": "W:/ARM/Project10_19/Core/Src/system_stm32f1xx.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\sysmem.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\sysmem.c",
+  "file": "W:/ARM/Project10_19/Core/Src/sysmem.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -o CMakeFiles\\Project10_19.dir\\Core\\Src\\syscalls.c.obj -c W:\\ARM\\Project10_19\\Core\\Src\\syscalls.c",
+  "file": "W:/ARM/Project10_19/Core/Src/syscalls.c"
+},
+{
+  "directory": "W:/ARM/Project10_19/cmake-build-debug",
+  "command": "\"D:\\Envs\\c++\\arm\\10 2021.10\\bin\\arm-none-eabi-gcc.exe\" -DDEBUG -DSTM32F103xE -DUSE_HAL_DRIVER -IW:\\ARM\\Project10_19\\.\\Core\\App -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Core\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include -IW:\\ARM\\Project10_19\\cmake\\stm32cubemx\\..\\..\\Drivers\\CMSIS\\Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g -o CMakeFiles\\Project10_19.dir\\startup_stm32f103xe.s.obj -c W:\\ARM\\Project10_19\\startup_stm32f103xe.s",
+  "file": "W:/ARM/Project10_19/startup_stm32f103xe.s"
+}
+]

@@ -1,0 +1,5 @@
+"D:\Professional\CLion 2022.1.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S W:\ARM\Project10_19 -B W:\ARM\Project10_19\cmake-build-debug
+Build type: Debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: W:/ARM/Project10_19/cmake-build-debug
