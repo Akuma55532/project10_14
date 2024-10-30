@@ -1,21 +1,45 @@
-import requests
+import matplotlib
+matplotlib.use('qt5agg')  # 或者其他的GUI后端
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.animation import FuncAnimation
+import time
 
-def save_GPS_image():
-    parameters = {
-        'key': "8521f35f47f6dfc1c6874ac57e9c1f56",
-        'location': "102.857,24.850",  # 注意这里的键名是 'location' 而不是 'loaction'
-        'zoom': "15",
-        'size': "309*360",
-    }
-    response = requests.get("https://restapi.amap.com/v3/staticmap", params=parameters)
+# 假设我们要绘制的时间序列长度为 100
+n_points = 100
+x = np.linspace(0, 10, n_points)  # 时间轴
+y = np.zeros(n_points)  # 初始化 y 值为零
 
-    if response.status_code == 200:
-        # 如果状态码为 200，则表示请求成功
-        with open('gps_image.jpg', 'wb') as f:
-            f.write(response.content)  # 写入图片数据
-        print("图片已保存")
-    else:
-        print(f"请求失败，状态码：{response.status_code}")
+# 用于模拟数据获取的函数
+def get_new_data():
+    return np.random.random()  # 返回随机数据点
 
-# 调用函数
-save_GPS_image()
+# 更新 y 值的函数
+def update_data(i, y_data):
+    new_value = get_new_data()
+    y_data[:-1] = y_data[1:]  # 将现有数据向前移动一位
+    y_data[-1] = new_value  # 添加新数据点
+    return y_data
+
+fig, ax = plt.subplots()
+
+line, = ax.plot([], [], lw=2)  # 创建一个空的线条
+
+# 初始化函数
+def init():
+    line.set_data([], [])
+    return line
+
+# 动画更新函数
+def animate(i):
+    global y
+    y = update_data(i, y)[0]
+    line.set_data(x, y)
+    ax.set_xlim(0, 10)
+    ax.set_ylim(-1, 2)  # 根据你的数据范围进行调整
+    return line
+
+# 创建动画
+ani = FuncAnimation(fig, animate, frames=range(n_points), init_func=init, blit=True, interval=200)
+
+plt.show()

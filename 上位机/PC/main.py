@@ -1,3 +1,7 @@
+import random
+
+import matplotlib
+matplotlib.use('qt5agg')  # 或者其他的GUI后端
 import sys
 import time
 
@@ -10,11 +14,14 @@ import base64
 import os
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.animation import FuncAnimation
 import pyttsx3
 import requests
 from io import BytesIO
 from PIL import Image
-import threading
+import numpy as np
 
 """
 mqtt服务接口
@@ -49,6 +56,12 @@ mqtt服务接口
 """
 
 
+class MplCanvas(FigureCanvas):
+    def __init__(self, parent=None, width=5, height=5, dpi=100):
+        fig = Figure(figsize=(width, height), dpi=dpi)
+        self.axes = fig.add_subplot(111)
+        super(MplCanvas, self).__init__(fig)
+
 
 
 class MyMainWindow(QWidget):
@@ -59,15 +72,15 @@ class MyMainWindow(QWidget):
         # 初始化UI
         self.ui.setupUi(self)
 
-        # self.setAttribute(Qt.WA_TranslucentBackground)
-        # self.setWindowFlags(Qt.FramelessWindowHint)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowFlags(Qt.FramelessWindowHint)
 
         # 我的高德AC密钥
         self.key = "8521f35f47f6dfc1c6874ac57e9c1f56"
 
         # mqtt服务器设置参数,自己去了解一下mqtt通信机制
         self.node_name = "PC"
-        self.broker_ip = "192.168.255.120"
+        self.broker_ip = "192.168.0.100" # 树莓派ip地址 终端输入hostname -I
         self.broker_port = 1883
         self.topic = "FromRaspi"
         self.timeout = 60
@@ -81,6 +94,9 @@ class MyMainWindow(QWidget):
         self.count_dataenv = 0
         self.count_dataearth = 0
 
+        self.count_raw = 1
+        self.count_save = 1
+
         # 语音播报初始化
         self.engine = pyttsx3.init()
 
@@ -91,15 +107,107 @@ class MyMainWindow(QWidget):
         self.slot_bind()
 
         # 开始连接树莓派上的mqtt服务器
-        self.start_connect()
+        # self.start_connect()
 
         # GPS数据获取，向高德API发送请求，返回数据
-        self.get_GPS_image()
+        # self.get_GPS_image()
+
+        self.load_GPS_image()
+
+
 
 
 
     def ui_init(self):
-        self.ui.Label_time.setText("2024.10.16")
+        self.ui.Label_time.setText("生态护卫舰上位机")
+
+        self.draw_linear()
+
+
+
+        self.pie_layout = QVBoxLayout()
+        self.ui.widget_2.setLayout(self.pie_layout)
+        self.pie_sc = MplCanvas(dpi=80)
+        self.pie_layout.addWidget(self.pie_sc)
+
+        self.binghai_buff = [1, 1, 1]
+        self.binghai_labels = ['Y', 'S', 'C']
+        self.line_data = []
+        self.pie_sc.axes.pie(self.binghai_buff, labels=self.binghai_labels, autopct='%1.1f%%')
+        self.pie_sc.axes.set_title('status pie')
+
+        self.update_pie_chart()
+
+
+        n_points = 500
+        self.envdata_layout = QVBoxLayout()
+        self.ui.widget_3.setLayout(self.envdata_layout)
+        self.envdata_sc = MplCanvas(dpi=60)
+        self.envdata_layout.addWidget(self.envdata_sc)
+        self.envtemp_x = np.linspace(0, 4, n_points)  # 时间轴
+        self.envtemp_y = np.zeros(n_points)  # 初始化 y 值为零
+        self.envwet_y = np.zeros(n_points)  # 初始化 y 值为零
+
+        self.earthdata_layout = QVBoxLayout()
+        self.ui.widget_4.setLayout(self.earthdata_layout)
+        self.earthdata_sc = MplCanvas(dpi=60)
+        self.earthdata_layout.addWidget(self.earthdata_sc)
+        self.earthtemp_x = np.linspace(0, 4, n_points)  # 时间轴
+        self.earthtemp_y = np.zeros(n_points)  # 初始化 y 值为零
+        self.earthwet_y = np.zeros(n_points)  # 初始化 y 值为零
+
+
+    # def on_message_dataenv_callback_test(self):
+    #     payload = "temp:23.6 wet:12"
+    #     info = payload.split()  # 将payload按照空格分割成列表
+    #
+    #     data = {}  # 创建一个字典来存储键值对
+    #
+    #     for item in info:
+    #         key, value = item.split(":")  # 将每个item按照":"分割
+    #         try:
+    #             value = float(value)  # 尝试将值转换为浮点数
+    #         except ValueError:
+    #             print(f"无法将值 '{value}' 转换为浮点数")
+    #             continue  # 如果转换失败，则跳过此迭代
+    #         data[key] = value  # 将键值对存入字典
+    #
+    #
+    #     # 更新 y 数据
+    #     if self.count_dataenv < len(self.envtemp_y):
+    #         self.envtemp_y[self.count_dataenv] = data.get("temp")
+    #         self.envwet_y[self.count_dataenv] = data.get("wet")
+    #         self.count_dataenv += 1
+    #
+    #
+    #     # 清除之前的绘图并重新绘制
+    #     self.envdata_sc.figure.clear()
+    #     plot = self.envdata_sc.figure.add_subplot(111)
+    #     plot.plot(self.envtemp_x[:self.count_dataenv], self.envtemp_y[:self.count_dataenv])
+    #     plot.plot(self.envtemp_x[:self.count_dataenv], self.envwet_y[:self.count_dataenv])
+    #     plot.set_title('A simple2 plot')
+    #
+    #     # 更新绘图
+    #     self.envdata_sc.draw()
+
+
+
+    def draw_linear(self):
+        layout = QVBoxLayout()
+        self.ui.widget.setLayout(layout)
+
+        sc = MplCanvas(dpi=60)
+
+        # 在画布上绘制一些数据
+        x = np.linspace(0, 10, 50)
+        y = np.linspace(0, 10, 50)
+        sc.figure.clear()  # 清除之前的绘图
+        plot = sc.figure.add_subplot(111)
+        plot.plot(x, y)
+        plot.set_title('A simple plot')
+        self.resize(190, 190)
+
+        layout.addWidget(sc)
 
 
     def start_connect(self):
@@ -111,7 +219,8 @@ class MyMainWindow(QWidget):
                              ("detectshow", 0),
                              ("dataenv", 0),
                              ("dataearth", 0),
-                             ("datastatus", 0)])
+                             ("datastatus", 0),
+                             ("rawphoto", 0)])
 
         # 各种消息的回调函数
         self.node.message_callback_add("photoshow", self.on_message_photoshow_callback)
@@ -119,6 +228,7 @@ class MyMainWindow(QWidget):
         self.node.message_callback_add("dataenv", self.on_message_dataenv_callback)
         self.node.message_callback_add("dataearth", self.on_message_dataearth_callback)
         self.node.message_callback_add("datastatus", self.on_message_datastatus_callback)
+        self.node.message_callback_add("rawphoto", self.on_message_rawphoto_callback)
         # 开始循环，多线程启动
         self.node.loop_start()
 
@@ -145,95 +255,151 @@ class MyMainWindow(QWidget):
             self.count_detect += 1
             if self.count_detect == 5:
                 self.count_detect = 1
-            # self.draw_tuli(detect_data)
-        # image_folder = "./dataset/"
-        # if detect_data:
-        #     frame_base64 = message.payload.decode('utf-8')
-        #
-        #     jpeg_bytes = base64.b64decode(frame_base64)
-        #
-        #     image_path = os.path.join(image_folder, f"image_{self.count_detect}.jpg")
-        #     with open(image_path, "wb") as image_file:
-        #         image_file.write(jpeg_bytes)
-        #     self.count_detect += 1
+
+        image_folder = "./dataset/"
+        if detect_data:
+            frame_base64 = message.payload.decode('utf-8')
+
+            jpeg_bytes = base64.b64decode(frame_base64)
+
+            image_path = os.path.join(image_folder, f"image_{self.count_save}.jpg")
+            with open(image_path, "wb") as image_file:
+                image_file.write(jpeg_bytes)
+            self.count_save += 1
         pass
 
-    def draw_tuli(self,x1,y1,x2,y2):
-        # 图像的宽度和高度（像素）
-        image_width = 1280
-        image_height = 720
 
-        # 计算矩形的宽度和高度
-        rect_width = abs(x2 - x1)
-        rect_height = abs(y2 - y1)
+    def on_message_rawphoto_callback(self, client, userdata, message):
+        detect_data = message.payload.decode('utf-8')
+        if detect_data:
+            print("detect_data received")
+            self.raw(detect_data, self.count_raw)
+            self.count_raw += 1
+            if self.count_raw == 5:
+                self.count_raw = 1
 
-        mianji = rect_width * rect_height
+        image_folder = "./dataset/"
+        if detect_data:
+            frame_base64 = message.payload.decode('utf-8')
 
+            jpeg_bytes = base64.b64decode(frame_base64)
 
-
-        # 创建一个新的图像
-        fig, ax = plt.subplots()
-
+            image_path = os.path.join(image_folder, f"image_raw{self.count_save}.jpg")
+            with open(image_path, "wb") as image_file:
+                image_file.write(jpeg_bytes)
+            self.count_save += 1
         pass
+
 
     def on_message_dataenv_callback(self, client, userdata, message):
-        item = QTableWidgetItem(f"{message.payload.decode('utf-8')}")
-        self.ui.tableWidget.setItem(4, self.count_dataenv, item)
-        if self.count_dataenv == 4:
-            self.count_dataenv = 0
-        self.count_dataenv += 1
-        pass
+        data = message.payload.decode('utf-8')
+        info = data.split()  # 将payload按照空格分割成列表
+
+        data = {}  # 创建一个字典来存储键值对
+
+        for item in info:
+            key, value = item.split(":")  # 将每个item按照":"分割
+            try:
+                value = float(value)  # 尝试将值转换为浮点数
+            except ValueError:
+                print(f"无法将值 '{value}' 转换为浮点数")
+                continue  # 如果转换失败，则跳过此迭代
+            data[key] = value  # 将键值对存入字典
+
+
+        if self.count_dataenv < len(self.envtemp_y):
+            self.envtemp_y[self.count_dataenv] = data.get("temp")
+            self.envwet_y[self.count_dataenv] = data.get("wet")
+            self.count_dataenv += 1
+
+        # 清除之前的绘图并重新绘制
+        self.envdata_sc.figure.clear()
+        plot = self.envdata_sc.figure.add_subplot(111)
+        plot.plot(self.envtemp_x[:self.count_dataenv], self.envtemp_y[:self.count_dataenv])
+        plot.plot(self.envtemp_x[:self.count_dataenv], self.envwet_y[:self.count_dataenv])
+        plot.set_title('EnvTemp&Wet')
+
+        # 更新绘图
+        self.envdata_sc.draw()
+
 
     def on_message_dataearth_callback(self, client, userdata, message):
-        item = QTableWidgetItem(f"{message.payload.decode('utf-8')}")
-        self.ui.tableWidget.setItem(6, self.count_dataearth, item)
-        if self.count_dataearth == 4:
-            self.count_dataearth = 0
-        self.count_dataearth += 1
+        data = message.payload.decode('utf-8')
+        info = data.split()  # 将payload按照空格分割成列表
+
+        data = {}  # 创建一个字典来存储键值对
+
+        for item in info:
+            key, value = item.split(":")  # 将每个item按照":"分割
+            try:
+                value = float(value)  # 尝试将值转换为浮点数
+            except ValueError:
+                print(f"无法将值 '{value}' 转换为浮点数")
+                continue  # 如果转换失败，则跳过此迭代
+            data[key] = value  # 将键值对存入字典
+
+        if self.count_dataearth < len(self.earthtemp_y):
+            self.earthtemp_y[self.count_dataearth] = data.get("temp")
+            self.earthwet_y[self.count_dataearth] = data.get("wet")
+            self.count_dataearth += 1
+
+        # 清除之前的绘图并重新绘制
+        self.earthdata_sc.figure.clear()
+        plot = self.earthdata_sc.figure.add_subplot(111)
+        plot.plot(self.earthtemp_x[:self.count_dataearth], self.earthtemp_y[:self.count_dataearth])
+        plot.plot(self.earthtemp_x[:self.count_dataearth], self.earthwet_y[:self.count_dataearth])
+        plot.set_title('TuTemp&Wet')
+
+        # 更新绘图
+        self.earthdata_sc.draw()
+
+
         pass
 
     def on_message_datastatus_callback(self, client, userdata, message):
         leaf_status = message.payload.decode('utf-8')
         if leaf_status == "yeku1" or leaf_status == "yeku2":
             self.engine.say("病种为叶枯病")
-            self.put_item_status("叶枯病")
+            self.node.publish("armmove", "V\r\n", 0, False)
+            self.binghai_buff[0] += 1
+            time.sleep(1)
             self.node.publish("armmove", "V\r\n", 0, False)
         elif leaf_status == "shuangmei1" or leaf_status == "shuangmei2":
             self.engine.say("病种为霜霉病")
-            self.put_item_status("霜霉病")
             self.node.publish("armmove", "B\r\n", 0, False)
-            beng_thread = threading.Thread(target=self.beng_on)
-            beng_thread.daemon = True  # 设置为守护线程，程序结束时自动关闭
-            beng_thread.start()
+            self.binghai_buff[1] += 1
+            time.sleep(1)
+            self.node.publish("armmove", "B\r\n", 0, False)
         elif leaf_status == "chongzhu":
             self.engine.say("病种为虫蛀病")
-            self.put_item_status("虫蛀病")
+            self.binghai_buff[2] += 1
         else:
             self.engine.say("该植物健康")
-            self.put_item_status("健康")
         self.engine.runAndWait()
-        self.put_item_rate("13%")
+
+        self.update_pie_chart()
         pass
 
-    def beng_on(self):
 
-        self.node.publish("armmove", "B\r\n", 0, False)
+    def update_pie_chart(self):
+        # 更新饼图数据
+        total = sum(self.binghai_buff)
+        binghai_buff_temp = [val / total * 100 for val in self.binghai_buff]
+
+        # 清除之前的绘图
+        self.pie_sc.figure.clear()
+
+        # 创建新的子图
+        plot = self.pie_sc.figure.add_subplot(111)
+
+        # 绘制新的饼图
+        plot.pie(binghai_buff_temp, labels=self.binghai_labels, autopct='%1.1f%%')
+        plot.set_title('Pie Chart')
+
+        # 更新绘图
+        self.pie_sc.draw()
 
 
-
-    def put_item_status(self,message):
-        item = QTableWidgetItem(message)
-        self.ui.tableWidget.setItem(2, self.count_plantstatus, item)
-        if self.count_plantstatus == 4:
-            self.count_plantstatus = 0
-        self.count_plantstatus += 1
-
-    def put_item_rate(self,message):
-        item = QTableWidgetItem(message)
-        self.ui.tableWidget.setItem(0, self.count_plantrate, item)
-        if self.count_plantrate == 4:
-            self.count_plantrate = 0
-        self.count_plantrate += 1
 
     def slot_bind(self):
         self.ui.listWidget.itemClicked.connect(self.callback_listwidget) # 实现翻页功能
@@ -271,13 +437,13 @@ class MyMainWindow(QWidget):
 
     def callback_listwidget(self, item):
         item_text = item.text()
-        if item_text == "Page1":
+        if item_text == "Main":
             self.ui.StackedMainWidget.setCurrentIndex(0)
-        if item_text == "Page2":
+        if item_text == "Capture":
             self.ui.StackedMainWidget.setCurrentIndex(1)
-        if item_text == "Page3":
+        if item_text == "Control":
             self.ui.StackedMainWidget.setCurrentIndex(2)
-        if item_text == "Page4":
+        if item_text == "Prepare":
             self.ui.StackedMainWidget.setCurrentIndex(3)
 
     def callback_buttoncamera(self):
@@ -290,7 +456,6 @@ class MyMainWindow(QWidget):
         self.close()
 
     def camera_on(self, image_data):
-
         # 将Base64字符串解码为字节
         byte_data = base64.b64decode(image_data.encode('utf-8'))
         # 创建QImage对象
@@ -314,13 +479,46 @@ class MyMainWindow(QWidget):
             # 创建QPixmap对象，并设置为QLabel的背景
             pixmap = QPixmap.fromImage(qimage)
         if detect_label == 1:
+            self.ui.label_pic1.setFixedSize(465, 317)
+            self.ui.label_pic1.setScaledContents(True)
             self.ui.label_pic1.setPixmap(pixmap.scaled(self.ui.label_pic1.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
         if detect_label == 2:
+            self.ui.label_pic2.setFixedSize(465, 317)
+            self.ui.label_pic2.setScaledContents(True)
             self.ui.label_pic2.setPixmap(pixmap.scaled(self.ui.label_pic2.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
         if detect_label == 3:
+            self.ui.label_pic3.setFixedSize(465, 317)
+            self.ui.label_pic3.setScaledContents(True)
             self.ui.label_pic3.setPixmap(pixmap.scaled(self.ui.label_pic3.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
         if detect_label == 4:
+            self.ui.label_pic4.setFixedSize(465, 317)
+            self.ui.label_pic4.setScaledContents(True)
             self.ui.label_pic4.setPixmap(pixmap.scaled(self.ui.label_pic4.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+
+    def raw(self,detect_data,detect_label):
+        # 将Base64字符串解码为字节
+        byte_data = base64.b64decode(detect_data.encode('utf-8'))
+        # 创建QImage对象
+        qimage = QImage()
+        if qimage.loadFromData(byte_data):
+            # 创建QPixmap对象，并设置为QLabel的背景
+            pixmap = QPixmap.fromImage(qimage)
+        if detect_label == 1:
+            self.ui.label_5.setFixedSize(465, 317)
+            self.ui.label_5.setScaledContents(True)
+            self.ui.label_5.setPixmap(pixmap.scaled(self.ui.label_5.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        if detect_label == 2:
+            self.ui.label_6.setFixedSize(465, 317)
+            self.ui.label_6.setScaledContents(True)
+            self.ui.label_6.setPixmap(pixmap.scaled(self.ui.label_6.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        if detect_label == 3:
+            self.ui.label_7.setFixedSize(465, 317)
+            self.ui.label_7.setScaledContents(True)
+            self.ui.label_7.setPixmap(pixmap.scaled(self.ui.label_7.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+        if detect_label == 4:
+            self.ui.label_8.setFixedSize(465, 317)
+            self.ui.label_8.setScaledContents(True)
+            self.ui.label_8.setPixmap(pixmap.scaled(self.ui.label_8.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
     def toolButton_a(self):
         self.node.publish("carmove", "A\r\n", 0, False)
@@ -385,20 +583,18 @@ class MyMainWindow(QWidget):
 
     def toolButton_hide1(self):
         self.engine.say("病种为叶枯病")
-        self.put_item_status("叶枯病")
-        self.put_item_rate("13%")
+        # self.binghai_buff[0] += 1
+        # self.update_pie_chart()
         self.engine.runAndWait()
+
+
 
     def toolButton_hide2(self):
         self.engine.say("病种为霜霉病")
-        self.put_item_status("霜霉病")
-        self.put_item_rate("13%")
         self.engine.runAndWait()
 
     def toolButton_hide3(self):
         self.engine.say("病种为虫蛀病")
-        self.put_item_status("虫蛀病")
-        self.put_item_rate("13%")
         self.engine.runAndWait()
 
     def get_GPS_image(self):
@@ -412,6 +608,9 @@ class MyMainWindow(QWidget):
         response = requests.get("https://restapi.amap.com/v3/staticmap", params=parameters) # 向高德地图发送get请求
 
         if response.status_code == 200:
+            with open('gps_image.jpg', 'wb') as f:
+                f.write(response.content)  # 写入图片数据
+            print("图片已保存")
             self.ui.label_4.setFixedSize(309, 360)
             self.ui.label_4.setScaledContents(True)
             print(f"请求成功，状态码：{response.status_code}")
@@ -423,6 +622,19 @@ class MyMainWindow(QWidget):
                     pixmap.scaled(self.ui.label_4.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
         else:
             print(f"请求失败，状态码：{response.status_code}")
+
+    def load_GPS_image(self):
+        with open('gps_image.jpg', 'rb') as f:
+            GPS_image_data = f.read()  # 读取图片数据
+        self.ui.label_4.setFixedSize(309, 360)
+        self.ui.label_4.setScaledContents(True)
+        qimage = QImage()
+        if qimage.loadFromData(GPS_image_data):
+            # 创建QPixmap对象，并设置为QLabel的背景
+            pixmap = QPixmap.fromImage(qimage)
+            self.ui.label_4.setPixmap(
+                pixmap.scaled(self.ui.label_4.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
+
 
 
     def convert_png_to_jpeg(self,png_data):

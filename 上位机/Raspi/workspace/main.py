@@ -122,7 +122,7 @@ class MqttNodeFromPaspi:
 
         if  message.payload.decode("utf-8") == "AutoDetect":
             if self.autodetect_on_flag == 0:
-                self.detect_on_flag = 1
+                self.autodetect_on_flag = 1
                 print("AutoDetect")
                 camera_thread = threading.Thread(target=node.autodetect)
                 camera_thread.daemon = True  # 设置为守护线程，程序结束时自动关闭
@@ -196,7 +196,7 @@ class MqttNodeFromPaspi:
             frame_base64 = base64.b64encode(jpeg).decode('utf-8')
             self.client.publish("detectshow", payload=frame_base64, qos=0, retain=False)
             print("send---------------------------------------------------------------------------------")
-            self.detect_on_flag = 0
+            
             # 打开并读取文件
             with open('detection_results.txt', 'r') as file:
                 lines = file.readlines()  # 读取所有行
@@ -222,6 +222,8 @@ class MqttNodeFromPaspi:
                 print(f'类别: {categories[i]}, 置信度: {confidences[i]}')
 
             self.client.publish("datastatus",payload=categories[i],qos=0,retain=False)
+
+            self.detect_on_flag = 0
 
 
 
